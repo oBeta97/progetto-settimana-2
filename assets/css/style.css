@@ -1,1 +1,129 @@
 /* Your styles here */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.65em;
+}
+
+.container{
+    width: 95%;
+}
+
+.pbt-5px{
+    padding: 5px 0;
+}
+
+.pbt-2em{
+    padding: 2em 0;
+}
+
+.pbt-3em{
+    padding: 3em 0;
+}
+
+.align-block-center{
+    margin: 0 auto;
+}
+
+.text-centered{
+    text-align: center;
+}
+
+.dark-blue-container{
+    background-color: #222F3F;
+}
+
+.light-blue-container{
+    background-color: #364759;
+}
+
+.orange-container{
+    background-color: #F56600;
+}
+
+.white-container{
+    background-color: #fff;
+}
+
+/* * selector to include a,p,span,h1/2/...  */
+.dark-blue-container *,
+.light-blue-container *,
+.orange-container *, 
+.holiday-gift *
+{
+    color: #ffffff;
+}
+
+header .logo-container img {
+    width: 10em;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li:not(:last-child){
+    margin-right: 1em;
+}
+
+main{
+    background-color: #E9EDEE;
+}
+
+main section.container>*:not(:last-child),
+main section.container .product-categories>*:not(:last-child){
+    margin-bottom: 2em;
+}
+
+.holiday-gift{
+    background-image: url('../images/bg-image.png');
+    background-size: contain; /* Aggiunto perché su schermi grande esce una porcata*/
+}
+
+.holiday-gift h2{
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+
+.holiday-gift h4{
+    font-size: 0.9em;
+}
+
+.gift-showcase img{
+    display: inline-block;
+    width: calc(25% - 20px);
+    margin: 5px;
+    height: 15em;
+    border-radius: 15px;
+    -webkit-box-shadow: 8px 10px 35px -15px #000000; 
+    box-shadow: 8px 10px 35px -15px #000000;
+}
+
+span.link-style {
+	color: #256d9c;
+	margin-left: 1em;
+	font-size: 0.7em;
+    font-weight: bold;
+}
+
+.product-categories figure figcaption{
+    margin-top: -15px; /* dunno why between figcaption and the img there's a hidden margin*/
+}
+
+figure img {
+	width: 100%;
+}
+
+figure img,
+.gift-showcase img{
+	object-fit: cover;
+    
+}
+
+footer .logo-container img{
+    width: 25%;
+}
