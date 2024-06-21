@@ -49,7 +49,11 @@
     background-color: #fff;
 }
 
-/* * selector to include a,p,span,h1/2/...  */
+.light-gray-container{
+    background-color: #E9EDEE;
+}
+
+/* "*" selector to include a,p,span,h1/2/...  */
 .dark-blue-container *,
 .light-blue-container *,
 .orange-container *, 
@@ -59,19 +63,16 @@
 }
 
 header .logo-container img {
-    width: 10em;
+    width: 9em;
 }
 
-nav ul li{
+nav ul li,
+.gift-showcase img{
     display: inline-block;
 }
 
 nav ul li:not(:last-child){
     margin-right: 1em;
-}
-
-main{
-    background-color: #E9EDEE;
 }
 
 main section.container>*:not(:last-child),
@@ -94,7 +95,6 @@ main section.container .product-categories>*:not(:last-child){
 }
 
 .gift-showcase img{
-    display: inline-block;
     width: calc(25% - 20px);
     margin: 5px;
     height: 15em;
@@ -112,6 +112,7 @@ span.link-style {
 
 .product-categories figure figcaption{
     margin-top: -15px; /* dunno why between figcaption and the img there's a hidden margin*/
+    font-size: 0.8em;
 }
 
 figure img {
